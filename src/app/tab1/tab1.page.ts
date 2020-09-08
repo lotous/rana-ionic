@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Observable } from 'rxjs';
+import { ActivityService } from '../@core/services/activity.service';
 
 @Component({
   selector: 'app-tab1',
@@ -7,6 +9,10 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
 
-  constructor() {}
+  activityList: Observable<Activity[]>;
+
+  constructor(activityService: ActivityService) {
+    this.activityList = activityService.getAllActivities();
+  }
 
 }

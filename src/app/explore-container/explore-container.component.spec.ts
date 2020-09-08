@@ -1,7 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { IonicModule } from '@ionic/angular';
-
 import { ExploreContainerComponent } from './explore-container.component';
+import { IonicModule } from '@ionic/angular';
 
 describe('ExploreContainerComponent', () => {
   let component: ExploreContainerComponent;
